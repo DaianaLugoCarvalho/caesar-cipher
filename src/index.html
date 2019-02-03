@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Cesar Cipher</title>
+	<script src="cipher.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+<h1> Cifra de César</h1> 
+<h4> O aniversário da sua mãe está se aproximando e você está organizando uma festa surpresa.
+   Para manter a festa em segredo foi criado um grupo de Whatsapp com amigos e familiares.
+  O problema é que as vezes sua mãe utiliza o seu celular e pode ser que ela veja as suas mensagens.
+  Como a festa é surpresa, você decide criar uma aplicação que permita enviar mensagens criptografadas e depois descriptografar.</h4>
+	<br> 
 
-<h1><font color="MediumAquamarine	">Bem vindo ao Cypher </font></h1>
+	<div >
+	Chave: <input type="number" name="Chave" id="chave" size="05" title="Chave" placeholder="Chave" autofocus />
+	</div>
+	
+	<br>
+ 	
+	<div >
+	Mensagem: <input type="text" name="Mensagem" id="cipher" size="40" title="Mensagem" placeholder="Digite a mensagem" spellcheck="true">
+    <br>
+    <br>
+		<button id="btCifra" > Cifrar </button>
+    <button id="btDecifra" > Decifrar </button>
+	</div>
+	<br>
 
-<button type ="button" onclick=> Cifrar </button>
+  <div id="mensagem"> Resultado <span>
+    <input type="text" name="resultado" id="resp" value="" size="40" readonly>
+    <br>
+  </div>
 
-<button type ="button" onclick=> Decifrar </button>
-
-
-
-<input type="text" name="Nome" size="40" /> 
-<input type="text" name="Nome" size="05" /> 
-
-
-
-
-
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
-</html>
-
+	</body>
+	</html>
